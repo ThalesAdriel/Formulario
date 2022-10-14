@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en
+">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1 id="title">Formulario de League of legends</h1>
+            <p id="description">Coloque suas informações para poder participar do time</p>
+            <br>
+        </header>
+        <hr>
+        <section>
+            <h3>Responda as informações abaixo</h3>
+            <form id="survey-form">
+                <fieldset id="inicial_information" class="forms">
+                    <div>
+                        <label id="name-label" for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Coloque seu nome completo aqui" required>
+                    </div>
+                    <div>
+                        <label id="nick-label" for="in_game_nick">Nick</label>
+                        <input type="text" name="nick" id="in_game_nick" placeholder="Coloque suea nome dentro do jogo aqui" required>
+                    </div>
+                    <div>
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Coloque sue Email aqui" required>
+                    </div>
+                    <div>
+                        <label id="number-label" for="number">Qual sua idade</label>
+                        <input type="number" name="number" id="number" placeholder="Coloque sua idade aqui" max="120" min="12" required>
+                    </div>
+                </fieldset>
+                <fieldset id="elos_control">
+                    <div id="elos">
+                        <label>Qual seu elo?</label>
+                        <label><input value="none" id="none" name="elo" type="radio">Não tenho elo</label>
+                        <label><input value="iron" id="iron" name="elo" type="radio">Ferro</label>
+                        <label><input value="bronze" id="bronze" name="elo" type="radio">Bronze</label>
+                        <label><input value="silver" id="silver" name="elo" type="radio">Prata</label>
+                        <label><input value="gold" id="gold" name="elo" type="radio">Ouro</label>
+                        <label><input value="platinum" id="platinum" name="elo" type="radio">Platina</label>
+                        <label><input value="diamond" id="diamond" name="elo" type="radio">Diamante</label>
+                        <label><input value="master" id="master" name="elo" type="radio">Mestre</label>
+                        <label><input value="gm" id="gm" name="elo" type="radio">Grão-Mestre</label>
+                        <label><input value="challenger" id="challenger" name="elo" type="radio">Desafiante</label>
+                    </div>
+                </fieldset>
+                <div id="all_lanes">
+                    <label id="title_lanes" for="dropdown">Em que lane(rota) você tem preferência?</label>
+                    <select name="lane" id="dropdown">
+                        <option value="placeholder">--</option>
+                        <option value="top">>Rota do topo</option>
+                        <option value="jg">>Selva</option>
+                        <option value="mid">>Rota do meio</option>
+                        <option value="adc">>Atirador</option>
+                        <option value="sup">>suporte</option>
+                    </select>
+                </div>
+                <fieldset id="checkboxs" class="forms">
+                    <div id="box">
+                        <label id="checkbox_title">Com que tipos de classe você gosta de jogar?</label>
+                        <label for="classL">
+                            <input type="checkbox" id="classL" name="classL" value="lutadores" ><img src="img/Fighter_icon.png" alt="Icone de lutador do league of legends"  width="18"
+                            height="20" >Lutadores
+                        </label>
+                        <label for="classMC">
+                            <input type="checkbox" id="classMC" name="classMC" value="magos de controle"><img src="img/Mage_icon.png" alt="Icone de mago do league of legends"   width="18"
+                            height="20" >Magos de controle
+                        </label>
+                        <label for="classMB">
+                            <input type="checkbox" id="classMB" name="classMB" value="magos de burst"><img src="img/Mage_icon.png" alt="Icone de mago do league of legends"  width="18"
+                            height="20" >Magos de burst
+                        </label>
+                        <label for="classAS">
+                            <input type="checkbox" id="classAS" name="classAS" value="assassinos"><img src="img/Slayer_icon.png" alt="Icone de assassino do league of legends"  width="18"
+                            height="20" >Assassinos
+                        </label>
+                        <label for="classT">
+                            <input type="checkbox" id="classT" name="classT" value="tanks"><img src="img/Tank_icon.png" alt="Icone de tank do league of legends"  width="18"
+                            height="20" >Tanks
+                        </label>
+                        <label for="classSI">
+                            <input type="checkbox" id="classSI" name="classSI" value="incantadores"><img src="img/Controller_icon.png" alt="Icone de suporte do league of legends"  width="18"
+                            height="20" >Suportes incantadores
+                        </label>
+                        <label for="classSC">
+                            <input type="checkbox" id="classSC" name="classSC" value="sup de controle"><img src="img/Controller_icon.png" alt="Icone de suporte do league of legends"  width="18"
+                            height="20" >Suportes de controle
+                        </label>
+                        <label for="classADC">
+                            <input type="checkbox" id="classADC" name="classADC" value="atiradores"><img src="img/Marksman_icon.png" alt="Icone de Atirador do league of legends"  width="18"
+                            height="20" >Atiradores
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="forms">
+                    <br>
+                    <label id="question_title" for="question">Por que você que fazer parte do nosso time?</label>
+                    <textarea name="quastion" id="question" cols="50" rows="7" placeholder="Coloque aqui por deseja fazer parte do time" required></textarea>
+                </div>
+                <hr>
+                <button class="button" id="submit" type="submit">Enviar formulario</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

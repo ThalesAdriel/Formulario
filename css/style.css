@@ -1,0 +1,117 @@
+body{
+    color: whitesmoke;
+    background-color: rgb(29, 27, 27);
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    line-height: 1;
+}
+h1, h3, p{
+    text-align: center;
+}
+main{
+    font-size:150%;
+    border-radius: 2%;
+    background-color: rgb(49, 44, 44);
+}
+fieldset{
+    border: none;
+    margin: 4%;
+}
+div{
+    margin: 4%;
+}
+input, select, textarea, button{
+    border-radius: 7px;
+}
+from:focus{
+    background-color: aliceblue;
+}
+.button{
+    transition: .6s;
+    width: 100%;
+    font-size: 120%;
+    background-color: rgb(73, 68, 68);
+    color: rgb(106, 115, 122);
+}
+.button:hover{
+    transition: .6s;
+    background-color: rgb(97, 85, 85);
+    color: rgb(116, 129, 139);
+    font-size: 150%;
+    box-shadow: 2px 8px 40px 30px rgba(171, 173, 145, 0.21);
+}
+
+#name, #in_game_nick, #email,#number{
+    background-color: rgb(174, 177, 177);
+    }
+#name:focus, #in_game_nick:focus, #email:focus,#number:focus{
+    transition: .6s;
+    background-color: rgb(242, 250, 250);
+}
+#dropdown{
+    background-color: rgb(174, 177, 177);
+}
+#dropdown:focus{
+    background-color: rgb(242, 250, 250);
+}
+#question{
+    background-color: rgb(174, 177, 177);
+}
+#question:focus{
+    background-color: rgb(242, 250, 250);
+}
+label{
+    display: flex;
+}
+#box > label:hover:not(:first-child){
+    transition: .6s;
+    color: rgb(206, 190, 146, 1);
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 7%;
+    box-shadow: 2px 8px 60px 5px rgba(171, 173, 145, 0.21);
+}
+#name,#in_game_nick,#email,#number{
+    padding: 2%;
+    border: 20px;
+    width: 100%;
+    font-size: 60%;
+}
+#dropdown{
+    width: 92%;
+    margin-left: 6%;
+    padding: 2%;
+    font-size: 60%;
+    margin-right: 8%;
+}
+#question{
+    width: 89%;
+    padding: 2%;
+    font-size: 100%;
+    margin-left: 6%;
+}
+#title_lanes{
+    margin-left: 6%;
+    margin-bottom: 1%;
+}
+#question_title{
+    margin-left: 6%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+}
+#elos > label:hover:not(:first-child){
+    transition: .6s;
+    color: rgb(206, 190, 146, 1);
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 7%;
+    box-shadow: 2px 8px 60px 5px rgba(171, 173, 145, 0.21);
+}
+#elos_control{
+    margin-left: 6%;
+    padding-left: 0%;
+}
+
+
+
+
