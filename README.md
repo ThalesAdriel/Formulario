@@ -1,3 +1,2 @@
 # Formulario
-Um simples formulário sobre participar de um time de league of legends.
-https://thalesadriel.github.io/Formulario/
+Um simples formulário sobre participar de um time de league of legends, feito para um estudo na faculdade.
